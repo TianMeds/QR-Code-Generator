@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* we use dot (.) to target class and
+hash (#) to target id... */
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("Wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+}
+img{
+    position: relative;
+    bottom: 40px;
+    width: 200px;
+    height: 200px;
+}   
+.note{
+position: absolute;
+top: 650px;
+}
+.generate{
+position: absolute;
+top: 600px;
+font-size: 18px;
+}
+
+p{
+position: relative;
+bottom: 55px;
+font-size: 3rem;
+font-weight: 700;
+font-family: 'Poppins';
+text-align: center;
+}
+
+.main {
+width: 400px;
+height: 740px;
+padding: 50px 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: #fff;
+box-shadow: 0 10px 25px -10px rgba(0,0,0,0.5);
+border-radius: 5px;
+}
+.main .input {
+position: relative;
+bottom: 50px;
+width: 90%;
+padding: 10px 25px;
+border: 3px solid #9e9e9e;
+outline: none;
+margin: 15px 0;
+}
+.main .input:focus {
+border: 3px solid #46494d;
+}
+.btn ,.input {
+font-size:1.1rem;
+border-radius: 5px;
+}
+.main .btn {
+position: relative;
+bottom: 20px;
+width: 90%;
+padding: 12px 0;
+outline: none;
+border:none;
+border-radius: 5px;
+background: #1a1d20;
+color: #fff;
+transition: 0.3s;
+margin: 0 0 25px 0;
+}
+.main .code {
+position: relative;
+bottom: 50px;
+margin: 25px 0;
+}
+.main .btn:hover {
+box-shadow: 0 10px 25px -10px #439cfb;
+}
+.main #note {
+font-size: 1.2rem;
+font-family: 'Courier New', Courier, monospace;
+}
+#toast {
+text-align: center;
+position: relative;
+left: -1px;
+top: 100px;
+border-radius: 5px;
+padding: 15px 50px;
+background: #07f49e;
+opacity: 0;
+visibility: hidden;
+box-shadow: 0 10px 25px -10px #07f49e;
+transition: 0.3s;
+}
+#toast.show {
+visibility: visible;
+opacity: 1;
+bottom: 50px;
+}
